@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio Design</title>
+     <!-- <<<<<<Tailwind & daisyui Configuration>>>>> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" 
+    rel="stylesheet"
+    type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <<<<<<Font Awesome>>>>>> -->
+    <script src="https://kit.fontawesome.com/79659e1450.js" crossorigin="anonymous"></script>
+    <!-- <<<<<<Google Font>>>>> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        color1: '#ABEF5F',
+                        color2: '#212121',
+                        body: '#1d1651 ',
+                        accent1: '#c6c3f3',
+                        accent2: '#f1b79c',
+                        body_neutral: '#383754',
+                    },
+                    backgroundImage: {
+                        banner: "url('./assets/banner.png')",
+                        formBg: "url('./assets/bg.jpg')",
+                    },
+                },
+            },
+        }
+    </script>
+
+    
+</head>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- <<<<<<NavBar Start Here>>>>> -->
+            <nav class= "shadow-lg">
+                <div class="navbar bg-base-100 text">
+                  <div class="navbar-start p-0 py-5">
+                    <a class="" href="#">
+                        <i class="fa-solid fa-arrow-right bg-color1 p-2 rounded-full me-2 text-color2 font- -rotate-45"></i>
+                        <span class="text-3xl font-extrabold text-color2">Rinterio</span>
+                    </a>
+                  </div>
+                  <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-color2 me-10">
+                      <li><a class="hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Home</a></li>
+                      <li><a class="hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Services</a></li>
+                      <li><a class="hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Portfolio</a></li>
+                      <li><a class="hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Blogs</a></li>
+                      <li><a class="hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="navbar-end">
+                    <div class="flex items-center gap-5 font-bold text-xl">
+                        <div class="hidden lg:block">
+                        <i class="fa-solid fa-magnifying-glass text-orange-400 me-4 bg-white rounded-full shadow-xl p-4"></i>
+                        <i class="fa-solid fa-cart-shopping text-orange-400 me-4 bg-white rounded-full shadow-xl p-4"></i>
+                        <button class=" text-xl font-extrabold bg-gradient-to-r from-lime-300 to-orange-400 rounded-full p-4">Book Consult <span><i class="fa-solid fa-arrow-right bg-color1 p-2 rounded-full me-2 text-color2 font- -rotate-45"></i></span></button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                        <i class="fa-solid fa-bars p-4  bg-white rounded-full shadow-xl"></i>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content text-color2 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5">
+                        <li><a class="text-lg font-medium hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Home</a></li>
+                        <li><a class="text-lg font-medium hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Services</a></li>
+                        <li><a class="text-lg font-medium hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Portfolio</a></li>
+                        <li><a class="text-lg font-medium hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Blogs</a></li>
+                        <li><a class="text-lg font-medium hover:bg-lime-200 hover:text-orange-500 transition-colors duration-300">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
